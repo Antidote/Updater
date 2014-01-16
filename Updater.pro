@@ -1,10 +1,10 @@
 #-------------------------------------------------
 #
 # Project created by QtCreator 2013-09-14T13:57:34
-#
+# 
 #-------------------------------------------------
 
-QT       += core network gui
+QT       += core network gui 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = updater
