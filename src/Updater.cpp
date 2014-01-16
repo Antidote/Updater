@@ -22,7 +22,7 @@
 #include <QNetworkRequest>
 #include <QStringList>
 #include <QByteArray>
-#include <QDebug>
+#include <QDebug> 
 
 Updater::Updater(QObject* parent)
     : QObject(parent)
