@@ -1,27 +1,19 @@
 #-------------------------------------------------
 #
 # Project created by QtCreator 2013-09-14T13:57:34
-<<<<<<< HEAD
 #
 #-------------------------------------------------
 
-QT       += core network gui
-=======
-# 
-#-------------------------------------------------
-
 QT       += core network gui 
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = updater
 TEMPLATE = lib
 CONFIG += staticlib
-<<<<<<< HEAD
+
 DESTDIR += ./
-=======
-DESTDIR += ./ 
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
+
+
 
 CONFIG(release, release|debug) {
     DEFINES -= WK2_DEBUG

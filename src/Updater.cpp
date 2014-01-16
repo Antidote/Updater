@@ -22,11 +22,7 @@
 #include <QNetworkRequest>
 #include <QStringList>
 #include <QByteArray>
-<<<<<<< HEAD
 #include <QDebug> 
-=======
-#include <QDebug>
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
 
 Updater::Updater(QObject* parent)
     : QObject(parent)
@@ -60,11 +56,7 @@ QString Updater::md5Sum() const
     return m_md5Sum;
 }
 
-<<<<<<< HEAD
 void Updater::checkForUpdate(QString url, QString currentVersionString, uint currentVersion)
-=======
-void Updater::checkForUpdate(QString url, QString currentVersionString, int currentVersion)
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
 {
     m_currentVersion = currentVersion;
     qApp->setOverrideCursor(Qt::WaitCursor);
@@ -90,11 +82,7 @@ void Updater::parse(QStringList data)
             return;
         }
 
-<<<<<<< HEAD
         uint serverVersion = versionString.split("=")[1].toInt(NULL, 16);
-=======
-        int serverVersion = versionString.split("=")[1].toInt(NULL, 16);
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
         if (serverVersion <= m_currentVersion)
         {
             emit noUpdate();
@@ -212,10 +200,6 @@ void Updater::onNetworkFinished(QNetworkReply* nr)
     }
     else if (nr->error() == QNetworkReply::NoError)
     {
-<<<<<<< HEAD
-=======
-        qDebug() << "Content Type: " << nr->header(QNetworkRequest::ContentTypeHeader);
->>>>>>> ce878780a592b156fb485f5372f9cd223429806c
         qApp->restoreOverrideCursor();
         QStringList data = QString(nr->readAll()).split("\n");
         parse(data);
