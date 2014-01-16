@@ -43,7 +43,11 @@ public:
     QString md5Sum() const;
 
 public slots:
+<<<<<<< HEAD
     void checkForUpdate(QString url, QString currentVersionString, uint currentVersion);
+=======
+    void checkForUpdate(QString url, QString currentVersionString, int currentVersion);
+>>>>>>> ce878780a592b156fb485f5372f9cd223429806c
 
 signals:
     void noUpdate();
@@ -67,7 +71,11 @@ private:
     QString                m_updateUrl;
     QString                m_changelogUrl;
     QString                m_currentVersionString;
+<<<<<<< HEAD
     uint                   m_currentVersion;
+=======
+    int                    m_currentVersion;
+>>>>>>> ce878780a592b156fb485f5372f9cd223429806c
     QString                m_errorString;
     QString                m_md5Sum;
 };
